@@ -101,6 +101,7 @@ if [[ `command -v pulseaudio` && `command -v proot-distro` && `command -v wget` 
 	    cd ~
 	    wget https://raw.githubusercontent.com/sabamdarif/parrot-gui/main/builder/install-parrot-desktop
 	    wget https://raw.githubusercontent.com/sabamdarif/parrot-gui/main/remove-parrot.sh
+            chmod +x remove-parrot.sh
         mv -f install-parrot-desktop $PREFIX/var/lib/proot-distro/installed-rootfs/parrot/root/install-parrot-desktop
         chmod +x $PREFIX/var/lib/proot-distro/installed-rootfs/parrot/root/install-parrot-desktop
     fi
