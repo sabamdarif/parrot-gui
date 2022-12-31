@@ -1,5 +1,5 @@
 
-<p align="center"><b>RunParrot OS GUI on your termux with some cool features.</b></p>
+<p align="center"><b>RunParrot OS GUI on your termux.</b></p>
 
 ### Features:
 
@@ -17,7 +17,7 @@
   - `pkg update -y && pkg upgrade -y`
   - `pkg install git wget -y`
   - `git clone https://github.com/sabamdarif/modded-kali`
-  - `wget `
+  - `wget https://raw.githubusercontent.com/sabamdarif/parrot-gui/main/setup-parrot-cli`
   - `chmod +x setup-parrot-cli`
   - `./setup-parrot-cli`
   - `parrot`
