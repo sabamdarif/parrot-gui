@@ -6,8 +6,7 @@
 - Fixed Audio Output
 - 2 Browsers (Chromium & Mozilla Firefox)
 - VLC Media Player and MPV media player (VLC Fully work)
-- Easy for Beginners
-- More customization ( new styles added and new fonts etc... )
+- Easy for Beginner 
 
 ### Installation:
 
@@ -43,7 +42,7 @@
 - **Type `vncstart` to run Vncserver**
 - **Type `vncstop` to stop Vncserver**
 - **Type `fixvnc` if the vnc server not started (for Android 12 users)**
-- **Type `bash remove.sh` to removeParrot OS**
+- **Type `bash remove-parrot.sh` to removeParrot OS**
 
 ### ISSUES:
 - **Issue:-** Android 12 users have a problem of vncserver automatically stop and and show " [Process completed (signal 9) - press Enter] " &  the next time vncserver not starting
