@@ -224,6 +224,7 @@ package() {
 	banner
     echo -e "${R} [${W}-${R}]${C} Checking required packages..."${W}
     apt update -y
+    apt install xfce4* -y
     apt install sudo -y
     apt --fix-broken install udisks2 -y
     rm /var/lib/dpkg/info/udisks2.postinst
@@ -231,7 +232,7 @@ package() {
     sudo dpkg --configure -a
     sudo apt-mark hold udisks2
     sudo apt-mark unhold gvfs-daemons
-    sudo apt install xfce4* -y
+    apt install xfce4* -y
     sudo dpkg --configure -a
     packs=(sudo wget curl nano git keyboard-configuration qterminal leafpad tzdata librsvg2-common menu inetutils-tools dialog  tigervnc-standalone-server tigervnc-common tigervnc-tools dbus-x11 )
     sudo dpkg --configure -a
@@ -248,7 +249,7 @@ fix_broken() {
     banner
     echo -e "${R} [${W}-${R}]${C} Checking error and fix it..."${W}
     sudo dpkg --configure -a
-     
+    apt install xfce4* -y
     sudo apt-get install --fix-broken keyboard-configuration -y
 }
 
