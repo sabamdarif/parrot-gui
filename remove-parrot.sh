@@ -20,12 +20,12 @@ printf "\033[32m subscribe my YouTube Channel Hello Android \033[0m\n"
 package() {
     echo -e "${R} [${W}-${R}]${C} Purging packages..."${W}
     if [[ -d "$PREFIX/var/lib/proot-distro/installed-rootfs/parrot" ]]; then
-        proot-distro remove kali && proot-distro clear-cache
+        proot-distro remove parrot && proot-distro clear-cache
     rm -rf $PREFIX/bin/parrot
     cd ~
     rm .sound
     rm -rf /data/data/com.termux/files/usr/bin/parrot
-    $PREFIX/etc/proot-distro/parrot.sh
+     rm -rf $PREFIX/etc/proot-distro/parrot.sh
         exit 0
     fi
     echo -e "${R} [${W}-${R}]${C} Purging Completed !"${W}
