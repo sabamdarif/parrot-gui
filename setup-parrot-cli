@@ -25,7 +25,7 @@ parrot_mode() {
     termux-setup-storage
 	pkg update -y
 	pkg install proot proot-distro -y
-        sed -i 's/parrot/ /g' proot-distro
+        sed -i 's/parrot/ /g' /data/data/com.termux/files/usr/bin/proot-distro
 touch $PREFIX/etc/proot-distro/parrot.sh
 cat << EOF >> $PREFIX/etc/proot-distro/parrot.sh
 # This is a default distribution plug-in.
