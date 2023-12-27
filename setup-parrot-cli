@@ -29,24 +29,12 @@ setup_rootfs(){
         arm)
             archtype="armhf"
             ;;
-        amd64)
-            archtype="amd64"
-            ;;
-        x86_64)
-            archtype="amd64"
-            ;;
-        i*86)
-            archtype="i386"
-            ;;
-        x86)
-            archtype="i386"
-            ;;
         *)
             echo "unknown architecture"; exit 1 ;;
     esac
 
-    base_url="https://raw.githubusercontent.com/sabamdarif/parrot-gui/main/rootfs/$archtype/parrot-rootfs-$archtype.tar.xz"
-    rootfs_file="parrot-rootfs-$archtype.tar.xz"
+    base_url="https://raw.githubusercontent.com/risecid/AndronixOrigin/master/Rootfs/Parrot/$archtype/parrot-rootfs-$archtype.tar.xz"
+rootfs_file="parrot-rootfs-$archtype.tar.xz"
 
 if [ -f "$rootfs_file" ]; then
   local filename="$rootfs_file"
@@ -176,7 +164,7 @@ notes() {
 	echo -e "\n${R} [${W}-${R}]${G} parrot-letest(CLI) is now Installed on your Termux"${W}
         echo -e "\n${R} [${W}-${R}]${G} Type ${C}parrot${G} to run parrot CLI."${W}
         echo -e "\n${R} [${W}-${R}]${G} If you Want to Use parrot in GUI MODE then ,"${W}
-        echo -e "\n${R} [${W}-${R}]${G} Run ${C}parrot${G} first & then type ${C}./install-parrot-desktop"${W}
+        echo -e "\n${R} [${W}-${R}]${G} Run ${C}parrot${G} first & then type ${C}bash gui.sh "${W}
         echo -e "\n"
         exit 0
     else
