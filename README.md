@@ -39,6 +39,7 @@
 ### NOTE :
 
 - **Type `parrot` to run PARROT OS CLI.**
+- **Type `parrot -r` to run Parrot CLI as root user**
 - **Type `vncstart` to run Vncserver**
 - **Type `vncstop` to stop Vncserver**
 - **Type `fixvnc` if the vnc server not started (for Android 12 users)**
